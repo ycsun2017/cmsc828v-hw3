@@ -9,19 +9,21 @@ iter_max = 120;  % max number of iterations allowed
 % [LMf,LMg] = LevenbergMarquardt(nt,N,tol,iter_max);
 
 %% visualize exact solution
-nt = 101;
-t = linspace(0,1,nt);
-[xm,ym] = meshgrid(t,t);
-[~,~,~,~,~,~,~,~,~,~,~,~,~,~,~,exact_sol] = setup();
-esol = exact_sol(xm,ym);
-figure(1);clf;
-hold on
-contourf(t,t,esol,linspace(min(min(esol)),max(max(esol)),20));
-colorbar;
-set(gca,'Fontsize',fsz);
-xlabel('x','Fontsize',fsz);
-ylabel('y','Fontsize',fsz);
-saveas(gcf,'esol.png')
+% nt = 101;
+% t = linspace(0,1,nt);
+% [xm,ym] = meshgrid(t,t);
+% [~,~,~,~,~,~,~,~,~,~,~,~,~,~,~,exact_sol] = setup();
+% esol = exact_sol(xm,ym);
+% figure(1);clf;
+% hold on
+% contourf(t,t,esol,linspace(min(min(esol)),max(max(esol)),20));
+% colorbar;
+% set(gca,'Fontsize',fsz);
+% xlabel('x','Fontsize',fsz);
+% ylabel('y','Fontsize',fsz);
+% saveas(gcf,'esol.png')
+
+
 % %
 % figure(3);clf;
 % subplot(2,1,1);
