@@ -48,22 +48,7 @@ hpp2 = hypp;
 [f,fx,fy,fxx,fyy,fyx,fyxx,fyyy,df,dfx,dfy,dfxx,dfyy,dfyx,dfyxx,dfyyy] = NN(x,v,W,u,fun,dfun,d2fun,d3fun,d4fun);
 x1 = [x(1);1];
 [f1,fx1,fy1,fxx1,fyy1,fyx1,fyxx1,fyyy1,df1,dfx1,dfy1,dfxx1,dfyy1,dfyx1,dfyxx1,dfyyy1] = NN(x1,v,W,u,fun,dfun,d2fun,d3fun,d4fun);
-% f
-% fx
-% fy
-% fxx
-% fyy
-% fyx
-% fyxx
-% fyyy
-% df
-% dfx
-% dfy
-% dfxx
-% dfyy
-% dfyx
-% dfyxx
-% dfyyy
+
 d2B = (h1*hpp2+h2*hpp1)*(f-f1-fy1) + 2*(hp1*h2*(fx-fx1-fyx1) + hp2*h1*(fy-fyy1)) ...
     + h1*h2*(fxx - fxx1 - fyxx1 + fyy - fyyy1);
 % residual r = d2A + d2B - RHS

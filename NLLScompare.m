@@ -5,7 +5,7 @@ N = 10; % the number of neurons
 tol = 1e-4; % stop if ||J^\top r|| <= tol
 iter_max = 120;  % max number of iterations allowed
 % [GDf,GDg] = GD(nt,N,tol,iter_max);
-% [GNf,GNg] = GaussNewton(nt,N,tol,iter_max);
+[GNf,GNg] = GaussNewton(nt,N,tol,iter_max);
 % [LMf,LMg] = LevenbergMarquardt(nt,N,tol,iter_max);
 
 %% visualize exact solution
